@@ -1,0 +1,82 @@
+
+html, body {
+  overflow-x: hidden;
+}
+
+nav {
+  background-color: #BD8D65;
+  border-bottom: #592519 solid;
+}
+
+.nav-link, #logo {
+ color: #592519;
+}
+
+.imagecont {
+ height: 100px;
+}
+
+.card {
+  max-height: 90%;
+}
+
+.card-img-top {
+  width: 100%;
+  min-height: 50%;
+}
+
+.card-title {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.shopname {
+  background-color: #FAEEDC;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.col-3 .card-body {
+  background-color: #592519;
+}
+
+#logo {
+  color: #8C6239;
+}
+
+#smallp {
+  font-size: 12px;
+}
+
+
+ul {
+  list-style: none
+}
+
+.btn-large {
+  background-color: #F2D7B6;
+}
+
+#promotions .container {
+  display: flex; 
+  height: 100%;
+  width: 70%;
+  margin: auto;
+}
+
+#pt1{
+  background-color: #733E1F;
+  padding: 50px;
+  color: aliceblue;
+
+}
+#pt2 {
+  background-color: #A66329;
+  padding: 50px;
+  color: aliceblue;
+}
+#pt2 a {
+  color: bisque;
+  font-size: large;
+}
+

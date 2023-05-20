@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hog Rider</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Montserrat:wght@300;600&family=Odibee+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body class="container-fluid">
+        <nav class="fixed-top navbar navbar-expand p-3">
+            <a class="navbar-brand float-start" href="index.html"><img class="img-fluid" src="https://blogger.googleusercontent.com/img/a/AVvXsEgwPNKD0aEl62zMZ3HBc7RXb3G8wcHd0Bz_2-o6bJQgZtH8nPskZBGvc0BB8cpgD-GC2glhoE16_vRFUrKLt_fhgC7JN5-nIcnaule3M0Zz9TSRvVx0apTmapK5lU1q_81lqt6zVHwE698xD6IKmOQ6CVk0UqUCpmlomD-Dje0JEWDT8QYHcJHg84QY" alt="logo" style="width:10%;"><span id="logo">&nbsp;Hog Rider</span></a>
+            <div class="collapse navbar-collapse"></div>
+            <div class="navbar-nav float-end">
+                <a class="nav-link" href="menu.html">Menu</a>
+                <a class="nav-link" href="aboutus.html">About Us</a>
+            </div>
+        </nav>
+        <header>
+            <img src="https://wallpapercave.com/wp/wc1808419.jpg" alt="thereal" id="thereal" style="min-width: 115%; margin-left:-25px; height:90%;" class="img-fluid">
+        </header>
+        <div class="container-fluid">
+            <div class="row mb-5">
+                <div class="col-md-8 mt-5">
+                    <h3 id="menu" class="mb-3">Menu</h3>
+                    <div class="row g-4">
+                        <div class="col-md-3">
+                            <div class="card h-100">
+                                <img src="https://www.clashtrack.com/img/buildings/elixir_storage_5.png" alt="elixir" class="card-img-top border border-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">25,000 Elixir</h5>
+                                    <h6 class="card-subtitle shopname mb-3 text-body-secondary">10 gems</h6>
+                                    <button class="btn btn-large float-end" id="btn1" onclick="addtoCart(event)">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card h-100">
+                                <img src="https://storage.frankeapps.com/resize/3/elixir-storage9b.109x100q15.png" alt="2milbuilderelixir" class="card-img-top border border-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">2,000,000 Elixir</h5>
+                                    <h6 class="card-subtitle shopname mb-3 text-body-secondary">500 gems</h6>
+                                    <button class="btn btn-large float-end" id="btn2" onclick="addtoCart(event)">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                       <div class="col-md-3">
+                            <div class="card h-100">
+                                <img src="https://www.clashtrack.com/img/buildings/elixir_storage_16.png" alt="5 million elixir" class="card-img-top border border-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">5,000,000 Elixir</h5>
+                                    <h6 class="card-subtitle shopname mb-3 text-body-secondary">1050 gems</h6>
+                                    <button class="btn btn-large float-end" id="btn3" onclick="addtoCart(event)">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card h-100">
+                                <img src="https://www.clashtrack.com/img/buildings/dark_elixir_storage_2.png" alt="the dark side of the elixir" class="card-img-top border border-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">25,000 Dark Elixir</h5>
+                                    <h6 class="card-subtitle shopname mb-3 text-body-secondary">30 gems</h6>
+                                    <button class="btn btn-large float-end" id="btn4" onclick="addtoCart(event)">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                       <div class="col-md-3">
+                            <div class="card h-100">
+                                <img src="https://www.clashtrack.com/img/buildings/dark_elixir_storage_9.png" alt="300k Dark elixir" class="card-img-top border border-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">300,000 Dark Elixir</h5>
+                                    <h6 class="card-subtitle shopname mb-3 text-body-secondary">300 gems</h6>
+                                    <button class="btn btn-large float-end" id="btn5" onclick="addtoCart(event)">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card h-100">
+                                <img src="https://www.clashtrack.com/img/buildings/dark_elixir_storage_10.png" alt="1 million liters of concentrated darkness" class="card-img-top border border-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">1,000,000 Dark Elixir</h5>
+                                    <h6 class="card-subtitle shopname mb-3 text-body-secondary">800 gems</h6>
+                                    <button class="btn btn-large float-end" id="btn6" onclick="addtoCart(event)">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-5">
+                            <div class="card h-100">
+                                <img src="https://www.clashchamps.com/wp-content/uploads/2022/10/monolith_lvl_2_hi-res-1024x768.png" alt="monolithee" id="orangej" class="card-img-top border border-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Monolith</h5>
+                                    <h6 class="card-subtitle shopname mb-3 text-body-secondary">145 gems</h6>
+                                    <button class="btn btn-large float-end" id="btn7" onclick="addtoCart(event)">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-5">
+                            <div class="card h-100">
+                                <img src="https://www.clashtrack.com/img/buildings/cannon_10.png" alt="X-move" id="applej" class="card-img-top border border-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cannon</h5>
+                                    <h6 class="card-subtitle shopname mb-3 text-body-secondary">50 gems</h6>
+                                    <button class="btn btn-large float-end" id="btn8" onclick="addtoCart(event)">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-5">
+                            <div class="card h-100">
+                                <img src="https://www.clashtrack.com/img/buildings/xbow_3.png" alt="X-move" id="pomegranatej" class="card-img-top border border-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">X-bow (Pre-loaded)</h5>
+                                    <h6 class="card-subtitle shopname mb-3 text-body-secondary">960 gems</h6>
+                                    <button class="btn btn-large float-end" id="btn9" onclick="addtoCart(event)">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-5">
+                            <div class="card h-100">
+                                <img src="https://www.clashtrack.com/img/buildings/air_defense_7.png" alt="btdreference" id="pineapplej" class="card-img-top border border-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Air Defense</h5>
+                                    <h6 class="card-subtitle shopname mb-3 text-body-secondary">400 gems</h6>
+                                    <button class="btn btn-large float-end" id="btn10" onclick="addtoCart(event)">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                       <div class="col-md-3">
+                            <div class="card h-100">
+                                <img src="https://www.clashtrack.com/img/buildings/wizard_tower_13.png" alt="Wizard_Tower" class="card-img-top border border-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Wizard Tower</h5>
+                                    <h6 class="card-subtitle shopname mb-3 text-body-secondary">425 gems</h6>
+                                    <button class="btn btn-large float-end" id="btn11" onclick="addtoCart(event)">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                       <div class="col-md-3">
+                            <div class="card h-100">
+                                <img src="https://www.clashtrack.com/img/buildings/inferno_tower_8.png" alt="Inferno Tower" class="card-img-top border border-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Inferno Tower</h5>
+                                    <h6 class="card-subtitle shopname mb-3 text-body-secondary">769 gems</h6>
+                                    <button class="btn btn-large float-end" id="btn12" onclick="addtoCart(event)">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mt-5">
+                            <div class="card h-100">
+                                <img src="https://www.clashtrack.com/img/buildings/spring_trap_5.png" alt="fnafreference" class="card-img-top border border-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Spring Trap</h5>
+                                    <h6 class="card-subtitle shopname mb-3 text-body-secondary">225 gems</h6>
+                                    <button class="btn btn-large float-end" id="btn13" onclick="addtoCart(event)">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mt-5">
+                            <div class="card h-100">
+                                <img src="https://www.clashtrack.com/img/buildings/tornado_trap_3.png" alt="tornadus" class="card-img-top border border-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tornado Trap</h5>
+                                    <h6 class="card-subtitle shopname mb-3 text-body-secondary">200 gems</h6>
+                                    <button class="btn btn-large float-end" id="btn14" onclick="addtoCart(event)">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mt-5">
+                            <div class="card h-100">
+                                <img src="https://www.clashtrack.com/img/buildings/hidden_tesla_6.png" alt="Hidden Tesla" class="card-img-top border border-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hidden Tesla</h5>
+                                    <h6 class="card-subtitle shopname mb-3 text-body-secondary">175</h6>
+                                    <button class="btn btn-large float-end" id="btn15" onclick="addtoCart(event)">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mt-5">
+                            <div class="card h-100">
+                                <img src="https://www.clashtrack.com/img/buildings/seeking_air_mine_4.png" alt="Ballistic" class="card-img-top border border-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Seeking Air Mine</h5>
+                                    <h6 class="card-subtitle shopname mb-3 text-body-secondary">275 gems</h6>
+                                    <button class="btn btn-large float-end" id="btn16" onclick="addtoCart(event)">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                       <div class="col-md-3 mt-5">
+                            <div class="card h-100">
+                                <img src="https://www.clashtrack.com/img/buildings/skeleton_trap_3.png" alt="fnafreference" class="card-img-top border border-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Skeleton Trap</h5>
+                                    <h6 class="card-subtitle shopname mb-3 text-body-secondary">199 gems</h6>
+                                    <button class="btn btn-large float-end" id="btn17" onclick="addtoCart(event)">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                       <div class="col-md-3 mt-5">
+                            <div class="card h-100">
+                                <img src="https://www.clashtrack.com/img/buildings/bomb_8.png" alt="fnafreference" class="card-img-top border border-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bomb</h5>
+                                    <h6 class="card-subtitle shopname mb-3 text-body-secondary">80 gems</h6>
+                                    <button class="btn btn-large float-end" id="btn18" onclick="addtoCart(event)">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card h-100">
+                                <img src="https://www.clashtrack.com/img/research/golem_3.png" alt="stone golem" class="card-img-top border border-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Golem</h5>
+                                    <h6 class="card-subtitle shopname mb-3 text-body-secondary">100 gems</h6>
+                                    <button class="btn btn-large float-end" id="btn19" onclick="addtoCart(event)">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card h-100">
+                                <img src="https://www.clashtrack.com/img/research/balloon_6.png" alt="btdreference2" class="card-img-top border border-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Balloon</h5>
+                                    <h6 class="card-subtitle shopname mb-3 text-body-secondary">110 gems</h6>
+                                    <button class="btn btn-large float-end" id="btn20" onclick="addtoCart(event)">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card h-100">
+                                <img src="https://www.clashtrack.com/img/research/ice_golem_6.png" alt="cryogen" class="card-img-top border border-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ice Golem</h5>
+                                    <h6 class="card-subtitle shopname mb-3 text-body-secondary">130 gems</h6>
+                                    <button class="btn btn-large float-end" id="btn21" onclick="addtoCart(event)">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card h-100">
+                                <img src="https://www.clashtrack.com/img/research/bowler_6.png" alt="Ballin" class="card-img-top border border-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bowler</h5>
+                                    <h6 class="card-subtitle shopname mb-3 text-body-secondary">125 gems</h6>
+                                    <button class="btn btn-large float-end" id="btn22" onclick="addtoCart(event)">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                  <div class="col-md-3">
+                            <div class="card h-100">
+                                <img src="https://www.clashtrack.com/img/research/dragon_7.png" alt="Dragon DEEZ NUTZ" class="card-img-top border border-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dragon</h5>
+                                    <h6 class="card-subtitle shopname mb-3 text-body-secondary">1250 gems</h6>
+                                    <button class="btn btn-large float-end" id="btn23" onclick="addtoCart(event)">Add</button>
+                                </div>
+                            </div>
+                        </div>
+              <div class="col-md-3">
+                            <div class="card h-100">
+                                <img src="https://www.clashtrack.com/img/research/hog_rider_7.png" alt="Ballin" class="card-img-top border border-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hog Rider</h5>
+                                    <h6 class="card-subtitle shopname mb-3 text-body-secondary">300 gems</h6>
+                                    <button class="btn btn-large float-end" id="btn24" onclick="addtoCart(event)">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 mt-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Your purchases</h5>
+                            <p id="smallp">Hog Rider Industries</p>
+                            <ul class="list-group list-group-flush" id="yourcart">
+                                <li class="list-group-item d-flex justify-content-center">
+                                    <em>No items bought yet. We'll wait....</em>
+                                </li>
+                            </ul>
+                            <h6 class="d-flex justify-content-between p-3">
+                                <span class="d-inline-block">Total</span>
+                                <span class="d-inline-block" id="amttotal">0</span>
+                            </h6>
+                            <div class="card-footer">
+                                <h5 class="mt-3">Delivery Details</h5>
+                                <form action="http://sirjm.infinityfreeapp.com/checkout.php" method="get">
+                                    <div class="mb-3">
+                                        <label for="cust_name" class="form-label">Name</label>
+                                        <input id="cust_name" type="text" class="form-control" name="cust_name" required value="miss ko na siya">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="cust_addr" class="form-label">Address</label>
+                                        <input id="cust_addr" type="text" class="form-control" name="cust_addr" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="cust_email" class="form-label">Email</label>
+                                        <input id="cust_email" type="email" class="form-control" name="cust_email" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <p class="form-control-text d-inline me-3"></p>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="addrtype" id="addrtype1" value="Home" required>
+                                            <label class="form=check-label" for="addrtype1">Home</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="addrtype" id="addrtype2" value="Business" required>
+                                            <label class="form=check-label" for="addrtype2">Business</label>
+                                            <input type="hidden" name="cust_order" id="cust_order">
+                                            <input type="hidden" name="restoname" id="restoname" value="Holy Grounds">
+                                        </div>
+                                    </div>
+                                    <div id="payment" class="mb-3">
+                                        <label for="mop" class="form-label" id="moplabel">Payment Method</label>
+                                        <select class="form-select border border-dark" name="mop" id="mop" required>
+                                            <option class="options icl" value="" selected disabled>Payment Method</option>
+                                            <option class="options">Gems</option>
+                                            <option class="options">League Medals ( x1.5 pricing )</option>
+                                            <option class="options">Credit or Debit Card</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="submit" value="Checkout" class="btn btn-primary">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
